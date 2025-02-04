@@ -59,10 +59,22 @@ cd htmlcov
 
 git add --all
 pre-commit run --all-files
+---
+
+ git remote -v
+origin  https://github.com/akenel/akd-django-web-app.git (fetch)
+origin  https://github.com/akenel/akd-django-web-app.git (push)
+ git checkout -b main
+Switched to a new branch 'main'
+pre-commit run --all-files
+pre-commit run --all-files
+
+----
+
 git commit -m "Initial Commit - Sanity Tests OK"
 ---
 git branch -M main
-git remote add origin https://github.com/akenel/akd-django-web-app.git
+git remote add origin https://github.com/akenel/pyWeb-app.git
 git checkout -b main
 Switched to a new branch 'main'
 git push -u origin main
