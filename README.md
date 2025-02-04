@@ -2,6 +2,182 @@
 
 Behold My Awesome Project!
 
+git merge feature-update-home-about
+Already up to date.
+
+´´´
+⚡angel ❯❯ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+⚡angel ❯❯ git checkout feature-update-home-about
+Switched to branch 'feature-update-home-about'
+Your branch is up to date with 'origin/feature-update-home-about'.
+´´´
+
+---
+
+## PRE_Commit - Run it twice to PASS all
+
+git init
+pre-commit install
+pre-commit --version
+pre-commit run --all-files
+
+---
+
+git status
+git add --all
+
+git push origin main
+
+git checkout main
+git fetch origin
+git pull origin main
+git merge feature-update-home-about
+git push -u origin feature-update-home-about
+
+---
+
+## Initial Steps
+
+# Example akd-django-web-app
+
+# py_app_local_django:latest
+
+python -m venv venv
+venv/scripts/activate
+
+---
+
+pipx run cookiecutter https://github.com/cookiecutter/cookiecutter-django.git
+cd < project_slug eg. cd py_app >
+
+---
+
+git init
+pip install -r requirements/local.txt
+pip install pre-commit
+pre-commit install
+
+---
+
+# Running tests with pytest and coverage
+
+### MyPy Sanity Check - Success: no issues found in 36 source files
+
+docker compose -f docker-compose.local.yml run --rm django mypy py_app
+
+### Test Coverage (31 passed ???)
+
+docker compose -f docker-compose.local.yml run --rm django coverage run -m pytest
+
+### Coverage Report Write HTML report to htmlcov/index.html
+
+docker compose -f docker-compose.local.yml run --rm django coverage html
+
+### Review and Open Coverage Browser 80%+ OK
+
+cd htmlcov
+Invoke-Item "index.html"
+
+eg:
+File statements missing excluded coverage
+Total 255 35 0 86%
+
+---
+
+## PRE_Commit - Run it twice to PASS all
+
+git init
+pre-commit install
+pre-commit --version
+pre-commit run --all-files
+
+---
+
+git init
+git status
+git add --all
+git merge feature-update-home-about
+git push origin main
+
+---
+
+## Git Repo (create via Internert for HTTP URL)
+
+git status
+git add --all
+pre-commit --version
+pre-commit run --all-files
+
+docker compose -f docker-compose.local.yml run --rm django mypy py_app
+docker compose -f docker-compose.local.yml run --rm django coverage run -m pytest
+docker compose -f docker-compose.local.yml run --rm django coverage html
+cd htmlcov
+%Invoke-Item "index.html"
+\*\* coverage.py v7.6.10, created at 2025-02-04 15:12 +0000 | 87%
+
+git add --all
+pre-commit run --all-files
+
+---
+
+git remote -v
+origin https://github.com/akenel/akd-django-web-app.git (fetch)
+origin https://github.com/akenel/akd-django-web-app.git (push)
+git checkout -b main
+Switched to a new branch 'main'
+pre-commit run --all-files
+pre-commit run --all-files
+
+---
+
+## git commit -m "Initial Commit - Sanity Tests OK"
+
+git branch -M main
+git remote add origin https://github.com/akenel/pyWeb-app.git
+git checkout -b main
+Switched to a new branch 'main'
+git push -u origin main
+...
+remote: Resolving deltas: 100% (10/10), done.
+To https://github.com/akenel/akd-django-web-app.git
+
+- [new branch] main -> main
+  branch 'main' set up to track 'origin/main'.
+
+⚡angel ❯❯ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+---
+
+## Create a new branch:
+
+git checkout -b feature-update-home-about
+git status
+On branch feature-update-home-about
+
+## Make changes:
+
+Update the home and about pages with the
+new API call.
+
+## PUSH Changes:
+
+git add .
+pre-commit run --all-files
+pre-commit run --all-files
+
+git commit -m "Update home and about pages with new API call"
+
+git push -u origin feature-update-home-about
+
+---
+
 [![Built with Cookiecutter Django](https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg?logo=cookiecutter)](https://github.com/cookiecutter/cookiecutter-django/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
