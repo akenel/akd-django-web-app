@@ -6,18 +6,18 @@ Welcome to a sample Django Project
 
 ### CREATE a new branch for example called fixs/doc
 
-git checkout -b fixs/doc
+git checkout -b fixes/main-pages
 
-Switched to a new branch 'fixs/doc'
+Switched to a new branch 'fixes/main-pages'
 
 This readMe file has some tips for you :)
 
-update: 222
+update: 753
 
 git fetch origin
 git checkout main
 git pull origin main
-git merge origin/fixs/doc
+git merge origin/fixes/main-pages
 
 # Resolve any merge conflicts if prompted
 
