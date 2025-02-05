@@ -1,5 +1,3 @@
-Sure, I can help clean up and organize your README file to make it clearer for your grandson and his friends. Here’s a refined version:
-
 # Py App
 
 Welcome to a sample Django Project from template django-cookiecutter
