@@ -4,13 +4,58 @@ Welcome to a sample Django Project
 
 # Branch Concepts
 
+### CREATE a new branch for example called fixs/doc
+
 git checkout -b fixs/doc
 
 Switched to a new branch 'fixs/doc'
 
 This readMe file has some tips for you :)
 
-update: 202
+update: 222
+
+git fetch origin
+git checkout main
+git pull origin main
+git merge origin/fixs/doc
+
+# Resolve any merge conflicts if prompted
+
+git add .
+git commit
+
+# PUSH branch into MAIN
+
+git push origin main
+
+## Options based on your future plans for the branch:
+
+1. **Keep the Branch**:
+
+   - If you anticipate making more changes or updates related to the `fixs/doc` branch, it's a good idea to keep it. This way, you can continue working on it without creating a new branch each time.
+
+2. **Delete the Branch**:
+   - If you believe the work on this branch is complete and you don't need it anymore, you can delete it to keep your repository clean and organized.
+
+Here are the commands to delete the branch both locally and remotely if you decide to remove it:
+
+### Delete the Local Branch
+
+```sh
+git branch -d fixs/doc
+```
+
+- If the branch hasn't been fully merged, use `-D` to force delete:
+
+```sh
+git branch -D fixs/doc
+```
+
+### Delete the Remote Branch
+
+```sh
+git push origin --delete fixs/doc
+```
 
 ## Package Management
 
