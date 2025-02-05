@@ -7,24 +7,31 @@ This readMe file has some tips for you :)
 # Removing a Branch
 
 ⚡angel ❯❯ git checkout main
+
 Already on 'main'
 Your branch is up to date with 'origin/main'.
 
 ⚡angel ❯❯ git branch -d branch_name
+
 error: branch 'branch_name' not found
 
 ⚡angel ❯❯ git branch -d feature-update-home-about
+
 error: the branch 'feature-update-home-about' is not fully merged
 hint: If you are sure you want to delete it, run 'git branch -D feature-update-home-about'
 hint: Disable this message with "git config advice.forceDeleteBranch false"
 
 ⚡angel ❯❯ git branch -D feature-update-home-about
+
 Deleted branch feature-update-home-about (was a3b9051).
 
 ⚡angel ❯❯ git push origin --delete feature-update-home-about
+
 To https://github.com/akenel/akd-django-web-app.git
 
 - [deleted] feature-update-home-about
+
+#### Branch successfully removed
 
 ## Initial Setup
 
