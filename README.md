@@ -19,6 +19,8 @@ git checkout main
 git pull origin main
 git merge origin/fixs/doc
 
+check at 756
+
 # Resolve any merge conflicts if prompted
 
 git add .
