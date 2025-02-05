@@ -10,6 +10,12 @@ Switched to a new branch 'fixs/doc'
 
 This readMe file has some tips for you :)
 
+update: 202
+
+## Package Management
+
+https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry
+
 # Removing a Branch
 
 ⚡angel ❯❯ git checkout main
