@@ -2,6 +2,12 @@
 
 Welcome to a sample Django Project
 
+# Branch Concepts
+
+git checkout -b fixs/doc
+
+Switched to a new branch 'fixs/doc'
+
 This readMe file has some tips for you :)
 
 # Removing a Branch
